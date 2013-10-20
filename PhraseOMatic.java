@@ -1,8 +1,8 @@
 public class PhraseOMatic {
 public static void main (String[] args) {
-String[] wordListOne = {"россия", "ïîëîæèòåëüíûé", "ãîòîâûé", "÷èñëîâîé", "îáùèé", "ñóùåñòâóþùèé", "ïðàâèëüíûé"};
-String[] wordListTwo = {"êðàéíèé", "ðàáîòàþùèé", "èñïîëüçîâàííûé", "íàïðàâëåííûé", "äèíàìè÷íûé", "ãîäîâîé", "äíåâíîé"};
-String[] wordListThree = {"îò÷åò", "ïðîöåññ", "òèï", "ïîäõîä", "óðîâåíü", "ìåòîä", "âèä", "ïåðèîä", "âûâîä", "êîò"};
+String[] wordListOne = {"ïðåêîáùåñòâî", "ïëîæüíûé", "ãîòîïåñ", "÷èñëîâîé", "ñóùåñòâóþùèé", "ïðàïðåêâèüíûé"};
+String[] wordListTwo = {"êðàéíèé", "ðàáîòþùèéïåñ", "èñïîëü", "íàïðïåñàâëííûé", "äèíàè÷çëîé", "ãîçëîéîé", "çëîéíåâíîé"};
+String[] wordListThree = { "ïðîöåññ", "òèï", "÷åëîâåê", "óðîâåíü", "ìåòî", "ïåñâèä", "ïåðèîä", "âûâîä", "çëîé"};
         int oneLength = wordListOne.length;
         int twoLength = wordListTwo.length;
         int threeLength = wordListThree.length;
