@@ -17,6 +17,6 @@ String[] wordListFive = { "Gruzia", "Armenia", "Belorussia", "Shotlandia", "Gren
         int rand5 = (int) (Math.random() * fiveLength);
  String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3] + " " + wordListFour[rand4];
 + " " + wordListFive[rand5];
-System.out.println("Ugadaj kakaia strana poiavitsa ? " + phrase);
+System.out.println("Ugadaj kakaia strana poavitsa ? " + phrase);
         }
 }
