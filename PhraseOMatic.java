@@ -1,7 +1,7 @@
 public class PhraseOMatic {
 public static void main (String[] args) {
-String[] wordListOne = {"ïðåêîáùåñòâî", "ïëîæüíûé", "ãîòîïåñ", "âûéîâîé", "ñóùåñòâóþùèé", "ïðàïðåêâèüíûé"};
-String[] wordListTwo = {"êõîäéé", "ðàáîòþùèéïåñ", "èñïîëü", "íàïðïåñàâëííûé", "äèíàè÷çëîé", "ãîçëîéîé", "çëîéíåâíîé"};
+String[] wordListOne = {"ïðåêîáùåñòâî", "ïëîæüíûé", "ãîòîåñ", "âéâîé", "óùåñòâé", "ðàïðåíûé"};
+String[] wordListTwo = {"êõîäé", "ðàîòþùèéïåñ", "èïëü", "íàïðïåñàâëííûé", "äíàçëîé",  "çëîéíåâíîé"};
 String[] wordListThree = { "ïðîöåññ", "òèï", "÷åëîâåê", "óðîâíü", "ìåòî", "ïåñâèä", "ïòîää", "òåëä", "çëîé"};
         int oneLength = wordListOne.length;
         int twoLength = wordListTwo.length;
