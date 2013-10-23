@@ -1,7 +1,7 @@
 public class HelloWorld {
 
    public static void main(String[] args){
-     System.out.println ("Константинов E.S.");
+     System.out.println ("Konstantinov E.S.");
    }
 
 }
