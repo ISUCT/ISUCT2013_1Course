@@ -36,6 +36,9 @@ public class Calc {
 	 znam = (float) ((float)Math.pow((Math.abs((Math.pow(x,2))-((Math.pow(a,2))))),(1/5.0)));
 	 float y5 = chisl/znam;
 	 System.out.println("x="+x+"; "+"y="+y5);
-	 // программа скорее всего не работает, т.к. у меня эклипс сломался :с
-	 }
+ }
+    public static void main(String[] args){
+        Calc my = new Calc();
+        my.taskA();
+    }
 }
