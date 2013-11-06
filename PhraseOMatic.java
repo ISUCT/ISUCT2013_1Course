@@ -1,8 +1,8 @@
 public class PhraseOMatic {
 	public static void main (String[] args) {
-		String[] wordListOne = {"пластичный", "амбициозный", "агрессивный", "нестабильный"};
-		String[] wordListTwo = {"умный", "выносливый", "развитый", "неугомонный"};
-		String[] wordListThree = {"человек", "животное", "насекомое", "общество"};
+		String[] wordListOne = {"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"};
+		String[] wordListTwo = {"пїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"};
+		String[] wordListThree = {"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"};
 	int oneLength = wordListOne.length;
 	int twoLength = wordListTwo.length;
 	int threeLength = wordListThree.length;
@@ -10,7 +10,7 @@ public class PhraseOMatic {
 	int rand2 = (int) (Math.random() * twoLength);
 	int rand3 = (int) (Math.random() * threeLength);
 	String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
-	System.out.printlh("Все, что нам нужно, - это " + phrase);
+	System.out.println("пїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, - пїЅпїЅпїЅ " + phrase);
 	}
 }
 	
