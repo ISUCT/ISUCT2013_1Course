@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -18,74 +21,44 @@ public class Calculator {
        
         
     }
-    public void taskB () {
-         float a = 2.5f;
-         double b = 4.6f;
-        float x = (float)1.2; 
-        singleValue (a,b,x);
-        x=(float)1.28;
-        singleValue (a,b,x);
-        x=(float)1.36;
-        singleValue (a,b,x);
-        x=(float)1.46;
-        singleValue (a,b,x);
-        x =(float)2.35;  
-        singleValue (a,b,x);
+    
+    public ArrayList<Float> taskB (float a, double b, float [] X) {
+           ArrayList<Float> y=new ArrayList<Float> ();
+           
+
+        System.out.println ("taskB");
+        int i=0;
+        for (float x:X){
+            y.add(singleValue (a,b,x));
+            System.out.println("x="+x+"; "+"y="+y.get(i));
+            i++;
+        }
+        return y;
     }
-    
-        
-//        float chisl;
-//        float znamen;
-//        chisl = (float)((Math.pow((a+b*x),2.5)));
-//        znamen = (float)(1+(Math.log10(a+b*x)));
-//       float y = chisl/znamen;
-//        System.out.println ("x="+ x +"; "+"y="+ y);
-//        
-//        x = (float)1.28; 
-//        chisl = (float)((Math.pow((a+b*x),2.5)));
-//        znamen = (float)(1+(Math.log10(a+b*x)));
-//        y = chisl/znamen;
-//         System.out.println ("x="+x+"; "+"y="+y);
-//         
-//         
-//         x = (float)1.36; 
-//        chisl = (float)((Math.pow((a+b*x),2.5)));
-//        znamen = (float)(1+(Math.log10(a+b*x)));
-//        y = chisl/znamen;
-//         System.out.println ("x="+x+"; "+"y="+y);
-//         
-//         
-//         x = (float)1.46; 
-//        chisl = (float)((Math.pow((a+b*x),2.5)));
-//        znamen = (float)(1+(Math.log10(a+b*x)));
-//        y = chisl/znamen;
-//         System.out.println ("x="+x+"; "+"y="+y);
-//         
-//         x = (float)2.35; 
-//        chisl = (float)((Math.pow((a+b*x),2.5)));
-//        znamen = (float)(1+(Math.log10(a+b*x)));
-//        y = chisl/znamen;
-    
-//         System.out.println ("x="+x+"; "+"y="+y);
-         
-         public void taskA (float a,float b){
-//             float a=2.5f;
-//             float x = (float) 1.2;
-                     float xn = (float)1.1;
-                     float xk = 3.6f;
-                     float dx = 0.5f;
-                     for (float x=xn;x<=xk;x=x+dx){
-                        float result = singleValue (a,b,x);
-                        System.out.println("x="+x+"; "+"y="+result);
-                     }
-         }
-    
+    public ArrayList<Float> taskA(float a,float b,float xn, float xk, float dx) {
+    ArrayList<Float> y= new ArrayList <Float>();
+    System.out.println ("taskA");
+        int i=0;
+        for (float x=xn; x<=xk;x=x+dx){
+            y.add(singleValue (a,b,x));
+            System.out.println("x="+x+"; "+"y="+y.get(i));
+            i++;
+        }
+        return y;
+    }
+
     public static void main (String [] args){
         Calculator my = new Calculator ();
-//        my.taskB();
-    my.taskA(2.5f,4.6f);
-    System.out.println("Another");
-    my.taskA(2.5f,4.6f);
+        ArrayList<Float> res=my.taskB(2, 3,new float[]{1,2,3});
+        for (int i=0; i<res.size();i++){
+                System.out.println("result >"+res.get(i));
+        }
+        ArrayList <Float> res1=my.taskA(2.5f, 4.6f, 1.1f, 3.6f, 0.5f);
+        for(int i=0;i<res1.size(); i++){
+            System.out.println("result>"+res1.get(i));
+            
+
+        }
        }
 }
 
