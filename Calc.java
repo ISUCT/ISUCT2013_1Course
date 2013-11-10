@@ -1,33 +1,51 @@
+import java.util.ArrayList;
+
 
 public class Calc {
- public void taskA() {
+	public float SingleValue(int a, float x){
+		 float y = (float)(Math.pow(a,((Math.pow(x,2)-1)))-Math.log10(Math.pow(x,2)-1)+Math.pow(Math.pow(x,2)-1,(1/3.0)));
+		 System.out.println("x="+x+"; "+"y="+y);
+		 return y;}
+	
+     public ArrayList<Float> taskB(){
+     ArrayList<Float> y= new ArrayList<Float>();
 	 
 	 int a=5;
-	 float y;
 	 
-	 float x1=(float)1.28;
-	 y = (float)(Math.pow(a,((Math.pow(x1,2)-1)))-Math.log10(Math.pow(x1,2)-1)+Math.pow(Math.pow(x1,2)-1,(1/3.0)));
-	 System.out.println("x="+x1+"; "+"y="+y);
+	 float x =(float)1.28;
+	 y.add(SingleValue(a, x));
 	 
-	 float x2=(float)1.36;
-	 y = (float)(Math.pow(a,((Math.pow(x2,2)-1)))-Math.log10(Math.pow(x2,2)-1)+Math.pow(Math.pow(x2,2)-1,(1/3.0)));
-	 System.out.println("x="+x2+"; "+"y="+y);
+	 x =(float)1.36;
+	 y.add(SingleValue(a, x));
 	 
-	 float x3=(float)2.47;
-	 y = (float)(Math.pow(a,((Math.pow(x3,2)-1)))-Math.log10(Math.pow(x3,2)-1)+Math.pow(Math.pow(x3,2)-1,(1/3.0)));
-	 System.out.println("x="+x3+"; "+"y="+y);
+	 x=(float)2.47;
+	 y.add(SingleValue(a, x));
 	 
-	 float x4=(float)3.68;
-	 y = (float)(Math.pow(a,((Math.pow(x4,2)-1)))-Math.log10(Math.pow(x4,2)-1)+Math.pow(Math.pow(x4,2)-1,(1/3.0)));
-	 System.out.println("x="+x4+"; "+"y="+y);
+	 x=(float)3.68;
+	 y.add(SingleValue(a, x));
+	
+	 x=(float)4.56;
+	 y.add(SingleValue(a, x));
 	 
-	 float x5=(float)4.56;
-	 y = (float)(Math.pow(a,((Math.pow(x5,2)-1)))-Math.log10(Math.pow(x5,2)-1)+Math.pow(Math.pow(x5,2)-1,(1/3.0)));
-	 System.out.println("x="+x5+"; "+"y="+y);
-		}
+	 return y;
+	 
+     }
+ public void taskA(int a){
+     float xn = (float)1.2;
+     float xk = (float)3.7;
+     float dx = (float)0.5;
+     for (float x = xn;x<=xk;x=x+dx){
+         float result = SingleValue(a, x);
+         System.out.println("x="+x+"; "+"y="+result);
+     }
+ }
+ 
  public static void main(String[] args){
      Calc my = new Calc();
-     my.taskA();
- }
+     ArrayList<Float> res=my.taskB();
+     for(int i=0;i<res.size();i++){
+         System.out.println("result >"+res.get(i));
 
+}
+}
 }
