@@ -56,19 +56,20 @@ public class Calc {
             return y;       
         }
           	
-        
-        public ArrayList<Float> taskA(double a,double b,float xn, float xk, float xd) {
+  public ArrayList<Float> taskA(double a,double b,float xn, float xk, float xd) {
         	ArrayList<Float> y= new ArrayList<Float>();
         	//float xn = (float) 1.81;
             //float xk = (float) 5.31;
             //float xd = (float) 0.7;
             //double a = 7.2;
             //double b = 4.2;    
-        	 for (float x = xn;x<=xk;x=x+xd){
-                 float result = singleValue(a, b, x);
-                 System.out.println("x="+x+"; "+"y="+result);
-        	}
-        	return y;
+        	int i=0;
+            for (float x = xn; x<=xk; x = x + xd) {
+            y.add(singleValue(a, b, x));
+            System.out.println("x=" + x + ";" + "y=" + y.get(i));
+            i=i+1;
+            }
+            return y;
         }
            
     	public static void main (String[] args) {
