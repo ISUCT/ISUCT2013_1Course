@@ -1,8 +1,10 @@
++
++import java.util.ArrayList;
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package src;
+
 
 /**
  *
@@ -18,24 +20,32 @@ public class Calc {
     return y;
     }
     
-    public void taskA(){
+    public ArrayList<Float> taskB(){
+        ArrayList<Float> y= new ArrayList<Float>();
+        
         float a = 0.4f;
         double b = 0.8f;
+
         float x =(float)4.48;
-        singleValue (a,b,x);
+        y.add(singleValue (a,b,x));
+        
         x =(float)3.56;
-        singleValue (a,b,x);
+        y.add(singleValue (a,b,x));
+        
         x =(float)2.78;
-        singleValue (a,b,x);
+        y.add(singleValue (a,b,x));
+        
         x =(float)5.28;
-        singleValue (a,b,x);
+        y.add(singleValue (a,b,x));
+        
         x =(float)3.21;
-        singleValue (a,b,x);
+        y.add(singleValue (a,b,x));
+        return y;
     }         
-        public void taskA(float a, float b){
-            float xn = (float)3.2;
-            float xk = 6.2f;
-            float dx = 0.6f;
+        public void taskA(float a, float b,float xn, float xk, float dx){
+//            float xn = (float)3.2;
+//            float xk = 6.2f;
+//            float dx = 0.6f;
             for (float x=xn;x<=xk;x=x+dx){
                 float result =singleValue (a,b,x);
                 System.out.println("x="+x+" ;"+"y="+result);
@@ -43,9 +53,13 @@ public class Calc {
         }
     public static void main (String[] args){
      Calc my = new Calc();
+     ArrayList<Float> res=my.taskB();
+     for (int i=0;i<res.size();i++){
+         System.out.println("result >"+res.get(i));
+     }
 //     my.taskA();
-     my.taskA(0.4f,0.8f);
-     System.out.println("Another");
-     my.taskA(0.4f,0.8f);
+//     my.taskA(0.4f,0.8f);
+//     System.out.println("Another");
+//     my.taskA(0.4f,0.8f);
         }
 }
