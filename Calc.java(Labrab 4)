@@ -1,0 +1,101 @@
+import java.util.ArrayList;
+
+public class Calc {
+    
+    public float singleValue (double a, double b, float x){
+    float chisl;
+    float znamen;
+
+
+    float chisl = (float) Math.pow((Math.pow((x - a), b)), 1 / 3.0) + (float) Math.pow(Math.abs((x + b)), 1 / 5.0);
+    float znamen = (float) Math.pow((Math.pow(x, 2) - Math.pow((x - b), b)), 1 / 9.0);
+    y = chisl / znamen;
+    return y;
+    }
+    public  ArrayList<Float> taskB(){
+            ArrayList<Float> y= new ArrayList<Float>();
+    double a = 0.8;
+    double b = 0.4;
+    
+    //float chisl;
+    //float znamen;
+    
+    float x = (float)1.88;
+    y.add(singleValue(a, b, x));
+    //float chisl = (float) Math.pow((Math.pow((x - a), b)), 1 / 3.0) + (float) Math.pow(Math.abs((x + b)), 1 / 5.0);
+    //float znamen = (float) Math.pow((Math.pow(x, 2) - Math.pow((x - b), b)), 1 / 9.0);
+    //y = chisl / znamen;
+    //System.out.println("x = " + x + "; y = " + y);
+    
+    x = (float)2.26;
+    y.add(singleValue(a, b, x));
+    //float chisl = (float) Math.pow((Math.pow((x - a), b)), 1 / 3.0) + (float) Math.pow(Math.abs((x + b)), 1 / 5.0);
+    //float znamen = (float) Math.pow((Math.pow(x, 2) - Math.pow((x - b), b)), 1 / 9.0);
+    //y = chisl / znamen;
+    //System.out.println("x = " + x + "; y = " + y);
+    
+     x = (float)3.84;
+     y.add(singleValue(a, b, x));
+    //float chisl = (float) Math.pow((Math.pow((x - a), b)), 1 / 3.0) + (float) Math.pow(Math.abs((x + b)), 1 / 5.0);
+    //float znamen = (float) Math.pow((Math.pow(x, 2) - Math.pow((x - b), b)), 1 / 9.0);
+    //y = chisl / znamen;
+    //System.out.println("x = " + x + "; y = " + y);
+    
+    x = (float)4.55;
+    y.add(singleValue(a, b, x));
+    //float chisl = (float) Math.pow((Math.pow((x - a), b)), 1 / 3.0) + (float) Math.pow(Math.abs((x + b)), 1 / 5.0);
+    //float znamen = (float) Math.pow((Math.pow(x, 2) - Math.pow((x - b), b)), 1 / 9.0);
+    //y = chisl / znamen;
+    //System.out.println("x = " + x + "; y = " + y);
+    
+    x = (float)-6.21;
+    .add(singleValue(a, b, x));
+    //float chisl = (float) Math.pow((Math.pow((x - a), b)), 1 / 3.0) + (float) Math.pow(Math.abs((x + b)), 1 / 5.0);
+    //float znamen = (float) Math.pow((Math.pow(x, 2) - Math.pow((x - b), b)), 1 / 9.0);
+    //y = chisl / znamen;
+    //System.out.println("x = " + x + "; y = " + y);
+    
+    
+    
+    public ArrayList<Float> taskA(double a,double b,float xn, float xk, float xd) {
+           ArrayList<Float> y= new ArrayList<Float>();
+           
+    //double a = (float) 0.8;
+    //double b = (float) 0.4;
+    //float xn = (float) 1.23;
+    //float xk = (float) 7.23;
+    //float dx = (float) 1.2;
+    
+    int i=0;
+    
+    for (x = xn; x <= xk; x = x + dx) {
+    y.add(singleValue(a, b, x));
+    System.out.println("x = " + x + "; y = " + y);
+    i=i+1;
+            }
+    return y;
+        }
+        
+    public static void main (String[] args) {
+     Calc my = new Calc ();
+     ArrayList<Float> res=my.taskB()               
+     for(int i=0; i<res.size(); i=i+1){
+     System.out.println("result >"+res.get(i));
+                    }
+                    
+     ArrayList<Float> res1=my.taskA(0.8, 0.4, 1.23f, 7.23f, 1.2f);
+     for (int i=0; i<res1.size(); i++){
+     System.out.println ("result >" + res1.get(i));
+                    }
+            }      
+}
+    
+
+        
+        
+        
+        
+        
+        
+        
+       
