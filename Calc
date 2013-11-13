@@ -1,0 +1,54 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ */
+    public class Сalc {
+    public void taskB() {
+        int a = 0.1;
+        double b = 0.5;
+        
+        float chisl;
+        float znamen;
+        
+        float x1=(float)0.2;
+        chisl = (float)(a+Math.pow((Math.tg(b*x)), 2));
+        znamen = (float)(b+Math.pow((Math.ctg(a*x)), 2));
+        float y = chisl/znamen;
+        System.out.println("x="+x1+"; "+"y="+y);
+        
+        float x2=(float)0.3;
+        chisl = (float)(a+Math.pow((Math.tg(b*x)), 2));
+        znamen = (float)(b+Math.pow((Math.ctg(a*x)), 2));
+        y = chisl/znamen;
+        System.out.println("x="+x1+"; "+"y="+y);
+        
+        float x3=(float)0.44;
+        chisl = (float)(a+Math.pow((Math.tg(b*x)), 2));
+        znamen = (float)(b+Math.pow((Math.ctg(a*x)), 2));
+        y = chisl/znamen;
+        System.out.println("x="+x1+"; "+"y="+y);
+        
+        float x4=(float)0.6;
+        chisl = (float)(a+Math.pow((Math.tg(b*x)), 2));
+        znamen = (float)(b+Math.pow((Math.ctg(a*x)), 2));
+        y = chisl/znamen;
+        System.out.println("x="+x1+"; "+"y="+y);
+        
+        float x5=(float)0.56;
+        chisl = (float)(a+Math.pow((Math.tg(b*x)), 2));
+        znamen = (float)(b+Math.pow((Math.ctg(a*x)), 2));
+        y = chisl/znamen;
+        System.out.println("x="+x1+"; "+"y="+y);
+
+        
+        }
+    public static void main (String[] args) {
+        Calc my = new Calc ();
+        my.taskB();
+    }
+        
+    }
