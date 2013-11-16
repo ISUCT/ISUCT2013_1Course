@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Calc {
  public float SingleValue(int a, float b, float x){
 	
