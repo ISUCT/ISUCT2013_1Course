@@ -71,7 +71,7 @@ public class CalculatorTest {
 //        x=2 y=0,015572
         
         Calculator instance = new Calculator();
-        ArrayList expResult = null;
+//        ArrayList expResult = null;
         ArrayList <Float> result = instance.taskA(a, b, xn, xk, dx);
         assertEquals(1.0, result.get (0), 0.0);
         assertEquals(4.347980, result.get (1), 0.001);
