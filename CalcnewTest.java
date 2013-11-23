@@ -17,6 +17,7 @@ import junit.framework.TestCase;
 
  */
 public class CalcnewTest extends TestCase {
+    private float nullf;
 
     
 
@@ -97,12 +98,36 @@ public class CalcnewTest extends TestCase {
 //        fail("The test case is a prototype.");
 
     }
+     
+   public void testTaskA() {
+
+           System.out.println("taskA");
+
+       float xn = 0.28F;
+
+        float xk = 0.55F;
+
+        float dx = 0.4F;
+
+        Calcnew instance = new Calcnew();
+        //  float  expResult = null;
+           
+         ArrayList<Float> result = instance.taskA( xn, xk, dx);
+         assertEquals(0.126261f, result.get(0),0.001);
+         assertEquals(0.717172f, result.get(1),0.001);
+         
+           
+        
 
 
 
+////        // TODO review the generated test code and remove the default call to fail.
+////        fail("The test case is a prototype.");
 
+//    }
+        
 
-
-
+        }
 
 }
+
