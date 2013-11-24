@@ -56,7 +56,8 @@ public class Calc {
             return y;       
         }
           	
-  public ArrayList<Float> taskA(double a,double b,float xn, float xk, float xd) {
+        
+        public ArrayList<Float> taskA(double a,double b,float xn, float xk, float xd) {
         	ArrayList<Float> y= new ArrayList<Float>();
         	//float xn = (float) 1.81;
             //float xk = (float) 5.31;
