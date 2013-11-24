@@ -50,9 +50,11 @@ public class CalcTest extends TestCase {
         expResult = 0.72528476f;
         expResult = 0.2828461f;
         ArrayList<Float> result = instance.taskB();
-        assertEquals(0.7393338f, result.get(0));
-        assertEquals(0.5994382f, result.get(1));
-        assertEquals( 0.3213951f, result.get(2));
+        assertEquals(0.7393338f, result.get(0), 0.0);
+        assertEquals(0.5994382f, result.get(1), 0.0);
+        assertEquals(0.3213951f, result.get(2), 0.0);
+        assertEquals(0.72528476f,result.get(3), 0.0);
+        assertEquals(0.2828461f,result.get(4), 0.0);
         // TODO review the generated test code and remove the default call to fail.
 //        fail("The test case is a prototype.");
     }
@@ -60,22 +62,22 @@ public class CalcTest extends TestCase {
 //    /**
 //     * Test of taskA method, of class Calc.
 //     */
-//        public void testTaskA() {
-//           System.out.println("taskA");
-//            float b = 2.5F;
+    public void testTaskA(float b, float xn, float xk, float dx) {
+        System.out.println("taskA");
+//        float b = 2.5F;
 //        float xn = 1.28F;
 //        float xk = 3.28F;
 //        float dx = 0.4F;
-//        int i=0;
-//            Calc instance = new Calc();
-//            float expResult = 0.7393338f;
-//        
-//        }
-//        ArrayList<Float> result = instance.taskA();
-//        assertEquals(expResult, result);
-////        // TODO review the generated test code and remove the default call to fail.
-////        fail("The test case is a prototype.");
-//    }
+        Calc instance = new Calc();
+        ArrayList<Float> result = instance.taskA(2.5f, 1.28f, 3.28f, 0.4f);
+        assertEquals(0.6965185f, result.get(0), 0.0);
+        assertEquals(0.7313025f, result.get(1), 0.0);
+        assertEquals(0.4253013f, result.get(2), 0.0);
+        assertEquals(0.40242705f, result.get(3), 0.0);
+        assertEquals(0.57020336f, result.get(4), 0.0);
+//        // TODO review the generated test code and remove the default call to fail.
+//        fail("The test case is a prototype.");
+    }
 
 
 }
