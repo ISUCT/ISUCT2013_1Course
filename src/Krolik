@@ -1,0 +1,53 @@
+package com.isuct.programming;
+
+public class HelloWorld {
+
+        public static void main(String[] args) {
+                // создаем кролика Марину
+                rabbit Marina = new rabbit(200, 100, 120, 400, 4, 190, 3);
+                Stepan.setPosition(0, 0);
+                Stepan.setfoodLevel(30);
+                SStepan.setRashod(8);
+
+                System.out.println("Кролик Марина: уровень еды = 30");
+
+                if (Marina.move("x", 100)) {
+                        System.out.println("Марина: Новые координаты теперь х= "
+                                        + Marina.getCoords()[0] + " y= " + Marina.getCoords()[1]);
+                } else {
+                        System.out.println("Марина: Хочет кушать");
+                }
+
+                if (Stepan.move("y", 400)) {
+                        System.out.println("Марина: Новые координаты теперь х= "
+                                        + Marina.getCoords()[0] + " y= " + Marina.getCoords()[1]);
+                } else {
+                        System.out.println("Марина: Хочет кушать");
+                }
+                System.out.println("Марина Проверим координаты х= "
+                                + Marina.getCoords()[0] + " y= " + Marina.getCoords()[1]);
+
+                // создаем кролика Ивана
+                Rabbit Ivan = new Rabbit(300, 150, 150, 500, 4, 250, 4);
+                Vasya.setPosition(0, 0);
+                Vasya.setfoodLevel(90);
+                Vasya.setRashod(8);
+
+                System.out.println("Кролик Иван: уровень еды = 90");
+
+                if (Ivan.move("y", 100)) {
+                        System.out.println("Иван Новые координаты теперь х= "
+                                        + Ivan.getCoords()[0] + " y= " + Ivan.getCoords()[1]);
+                } else {
+                        System.out.println("Иван Хочет кушать");
+                }
+
+                if (Ivan.move("y", 100)) {
+                        System.out.println("Иван Новые координаты теперь х= "
+                                        + Ivan.getCoords()[0] + " y= " + Ivan.getCoords()[1]);
+                } else {
+                        System.out.println("Иван Хочет кушать");
+                }
+        }
+
+}
