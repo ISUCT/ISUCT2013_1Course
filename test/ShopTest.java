@@ -25,7 +25,7 @@ public class ShopTest{
         Shop instance = new Shop();
         instance.Shop2(total);
         instance.setPrice(instance.keyboard);
-        assertEquals(0, instance.getTotal().get(1),0);
+        assertEquals(-5, instance.getTotal().get(0),0);
 
     }
 
