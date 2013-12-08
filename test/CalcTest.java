@@ -72,10 +72,10 @@ public class CalcTest extends TestCase {
         assertEquals(1.3206165,result.get(1),0.01);
         assertEquals(1.185529,result.get(2),0.01);
         assertEquals(1.0545129,result.get(3),0.01);
-        assertEquals(0.9324952,result.get(3),0.01);
-        assertEquals(0.8214861,result.get(3),0.01);
+        assertEquals(0.9324952,result.get(4),0.01);
+        assertEquals(0.8214861,result.get(5),0.01);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+//        fail("The test case is a prototype.");
     }
 
     /**
