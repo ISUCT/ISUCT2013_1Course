@@ -14,10 +14,10 @@ public class DotCom {
         one.setName("Site1.com");
         
         DotCom two = new DotCom();
-        one.setName("Site2.com");
+        two.setName("Site2.com");
         
         DotCom three = new DotCom();
-        one.setName("Site3.com");
+        three.setName("Site3.com");
         
         dotComsList.add(one);
         dotComsList.add(two);
@@ -38,7 +38,7 @@ public class DotCom {
             checkUserGuess(userGuess);
         }
             finishGame();
-            }
+       }
     
 
     private void checkUserGuess(String userGuess) {
@@ -65,12 +65,15 @@ public class DotCom {
             if (numOfGuess <= 18){ 
             System.out.println("Это заняло у вас всего" + numOfGuesses + "попыток.");
             System.out.println("Вы успели выбраться до того, как все ваши сайты потонули.");
-    }
-    else{
+    } else {
         System.out.println("Это заняло у вас довольно много времени." + numOfGuesses + "попыток.");
-        System.out.println("");
-
+        System.out.println("Рыбы водят хороводы вокруг ваших вложений.");
+            }
+     }
+    public static void main (String[] args){
+    DotComBust game = new DotComBust();
+    game.seUpGame();
+    game.startPlaying();
+    }
 }
-
-}
-}
+до 177 страницы
