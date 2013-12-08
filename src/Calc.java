@@ -1,14 +1,7 @@
 package src;
-import java.util.ArrayList;
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author -
- */
+import java.util.ArrayList;
+
 public class Calc {
     public float singleValue (float a, double b, float x){
         float chisl;
@@ -19,9 +12,6 @@ public class Calc {
         System.out.println("x=" + x + ";" + "y=" + y);
         return y;
     }
-    
-    
-    
     public ArrayList<Float> taskB(){
         ArrayList<Float> y= new ArrayList<Float>();
         
@@ -45,23 +35,16 @@ public class Calc {
         return y;
         }         
     
-    public ArrayList<Float> taskA(float a, float b,float xn, float xk, float dx){
-//            float xn = (float)3.2;
-//            float xk = 6.2f;
-//            float dx = 0.6f;
-            ArrayList<Float> y = new ArrayList<Float>();
-            int i = 0;    
-            for (float x=xn;x<=xk;x=x+dx){
-//                    float y =singleValue (a,b,x);
-//    //                result
-//                    Y.add(y);
-                    y.add(singleValue(a, b, x));
-                    System.out.println("x=" + x + ";" + "y=" + y.get(i));
-                    i++;
-    //                System.out.println("x="+x+" ;"+"y="+y);
-//                result
+    public void taskA (float a, float b, float xn, float xk, float dx){    
+            xn = 3.2f;
+            xk = 6.2f;
+            dx = 0.6f;
+            
+            for (float x = xn;x<=xk;x=x+dx){
+            float result = singleValue(a, b, x);
+            System.out.println("x="+x+"; "+"y="+result);
             }
-                return y;
+          
     }
         
  public static void main (String[] args){
@@ -70,13 +53,5 @@ public class Calc {
      for (int i=0;i<res.size();i++){
          System.out.println("result >"+res.get(i));
      }
-     ArrayList<Float> res1=my.taskA(0.4f, 0.8f, 3.2f, 6.2f, 0.6f);
-        for (int i=0; i<res1.size(); i++){
-        System.out.println ("result >" + res1.get(i));
-        }
-//     my.taskA();
-//     my.taskA(0.4f,0.8f);
-//     System.out.println("Another");
-//     my.taskA(0.4f,0.8f);
         }
 }
