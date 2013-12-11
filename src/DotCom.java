@@ -1,6 +1,5 @@
-
-package newpackage;
-
+package pkgnew;
+ 
 import java.util.ArrayList;
 
 public class DotCom {
@@ -76,4 +75,3 @@ public class DotCom {
     game.startPlaying();
     }
 }
-до 177 страницы
