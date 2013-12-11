@@ -56,7 +56,8 @@ public class CalcTest {
         //x=2 y=2*2+1=5
         
         Calc instance = new Calc();
-        ArrayList<Float> result = instance.taskA(a,b,xn,xk,dx);
+        ArrayList<Float> result = instance.taskA(2,1,0,2,1.9f);
+        //ArrayList<Float> result = instance.taskA(a,b,xn,xk,dx)
         assertEquals(1, result.get(0), 0.0);
         assertEquals(3, result.get(1), 0.0);
         assertEquals(5, result.get(2), 0.0);

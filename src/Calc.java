@@ -1,4 +1,3 @@
-﻿
 import java.util.ArrayList;
 
 /*
@@ -28,7 +27,7 @@ public class Calc {
            Y.add(y);
        } 
        return Y;
-
+    }
     
     public ArrayList<Float> taskB(){
         ArrayList<Float> y= new ArrayList<Float>();
@@ -48,9 +47,6 @@ public class Calc {
         x=(float)(Math.PI+1.5*Math.PI);
         y.add(singleValue(a, b, x));
         return y;
-    }
-    
-
     }
     
     public static void main(String[] args){
