@@ -36,9 +36,9 @@ public class Calc {
         }         
     
     public void taskA (float a, float b, float xn, float xk, float dx){    
-            xn = 3.2f;
-            xk = 6.2f;
-            dx = 0.6f;
+//            xn = 3.2f;
+//            xk = 6.2f;
+//            dx = 0.6f;
             
             for (float x = xn;x<=xk;x=x+dx){
             float result = singleValue(a, b, x);

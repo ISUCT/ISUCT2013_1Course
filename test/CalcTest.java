@@ -48,13 +48,16 @@ public class CalcTest extends TestCase {
     }
 
    
-    public void testTaskA(float a, float b,float xn, float xk, float dx) {
+    public void testTaskA() {
         System.out.println("taskA");
-//        float xn = 3.2f;
-//        float xk = 6.2f;
-//        float dx = 0.6f;
+        float xn = 3.2f;
+        float xk = 6.2f;
+        float dx = 0.6f;
+        float a = 0.4F;
+        float b = 0.8F;
+        
         Calc instance = new Calc();
-        ArrayList<Float> result = instance.taskA();
+        ArrayList<Float> result = instance.taskA(a, b, xn, xk, dx);
         assertEquals(1.4495866, result.get(0),0.01);
         assertEquals(1.3206165, result.get(1),0.01);
         assertEquals(1.185529, result.get(2),0.01);

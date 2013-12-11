@@ -8,7 +8,7 @@ import java.util.ArrayList;
  *
  * @author -
  */
-public class Plant {
+public class Toys {
    private int x=0;
    private int y=0;
    public final int X_DIRECTION=0;
