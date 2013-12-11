@@ -1,0 +1,91 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package newpackage;
+import java.io.*;
+import java.util.*;
+
+/**
+ *
+ * @author метро
+ */
+public class GameHelper {
+//    страница 176, 2 страницы кода
+    
+    private static final String alphabet = "abcdefg";
+    private int gridLenght = 7;
+    private int gridSize = 49;
+    private int [] grid = new int [gridSize];
+    private int comCount = 0;
+    
+    public String getUserInput (String promt) {
+        String inputLine = null;
+        System.out.println (promt +"  ");
+        try {
+            BufferedReader is = new BufferedReader (
+               new InputStreamReader (System.in));
+            inputLine = is.readLine ();
+            if (inputLine.length ()==0) return null;
+            
+        } catch (IOException e) {
+        System.out.println ("IOException: " +e);
+        }
+        return inputLine.toLowerCase ();
+    }
+    public ArrayList <String> placeDotCom (int comSize) {
+        ArrayList <String> alphaCells = new ArrayList <String> ();
+        String [] alphacoords = new String [comSize];
+        String temp = null;
+        int [] coords = new int [comSize];
+        int attemps = 0;
+        boolean success = false;
+        int location = 0;
+        
+        comCount++;
+        int incr = 1;
+        if ((comCount %2)== 1) {
+            incr = gridLenght;
+        }
+         while ( !success & attemps++ <200) {
+             location = (int) (Math.random() * gridSize);
+//       System.out.print("пробуем" + location);
+             int x = 0;
+             success = true;
+             while (success && x < comSize) {
+                 if (grid [location]==0) {
+                     coords [x++] = location;
+                     location +=incr;
+                     if (location >=gridSize) {
+                         success = false;
+                     }
+                     if (x>0 && (location % gridLenght == 0)) {
+                         success = false;
+                     }
+                     
+                 } else {
+//                     System.out.print("используется" + location);
+                     success = false;
+                 }
+             }
+         }       
+        
+         int x = 0;
+         int row = 0;
+         int column = 0;
+//         System.out.println("/n");
+         while (x<comSize) {
+             grid [coords [x]] = 1;
+             row = (int) (coords [x] / gridLenght);
+             column = coords [x] % gridLenght;
+             temp = String.valueOf (alphabet.charAt (column));
+             
+             alphaCells.add (temp.concat (Integer.toString (row)));
+             x++;
+//             System.out.print(" coord "+x+" = " + alphaCells.get (x-1));
+         }
+//         System.out.println ("/n");
+         return alphaCells;
+         }
+    
+}
