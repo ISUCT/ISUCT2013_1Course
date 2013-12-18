@@ -57,7 +57,7 @@ public class CalcTest extends TestCase {
         float b = 0.8F;
         
         Calc instance = new Calc();
-        ArrayList<Float> result = instance.taskA(a, b, xn, xk, dx);
+        ArrayList<Float> result = instance.ArrayListtaskA(a, b, xn, xk, dx);
         assertEquals(1.4495866, result.get(0),0.01);
         assertEquals(1.3206165, result.get(1),0.01);
         assertEquals(1.185529, result.get(2),0.01);

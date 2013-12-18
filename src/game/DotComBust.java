@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class DotComBust {
     private GameHelper helper = new GameHelper();
-    private ArrayList<DotCom> dotComList = new ArrayList<DotCom>();
+    private ArrayList<DotCom> dotComsList = new ArrayList<DotCom>();
     private int numOfGuesses = 0;
     
     private void setUpGame() {
@@ -32,12 +32,12 @@ public class DotComBust {
         
         for (DotCom dotComSet : dotComsList) {
             ArrayList<String> newLocation = helper.placeDotCom(3,7);
-            dotComToSet.setLocationCells(newLocation);
+            dotComSet.setLocationCells(newLocation);
         }
     }
          
         private void startPlaying(){
-                while (!dotComList.isEmpty()){
+                while (!dotComsList.isEmpty()){
                     String userGuess = helper.getUserInput("Сделай ход");
                     checkUserGuess(userGuess);
                 }
@@ -45,13 +45,13 @@ public class DotComBust {
         private void checkUserGuess(String userGuess){
         numOfGuesses++;
         String result="Мимо";
-        for(DotCom dotComToTest : dotComList){
+        for(DotCom dotComToTest : dotComsList){
             result = dotComToTest.checkYourself(userGuess);
             if (result.equals("Попал")){
                 break;
             }
             if (result.equals("Потопил")){
-                dotComList.remove(dotComToTest);
+                dotComsList.remove(dotComToTest);
                 break;
             }
          }

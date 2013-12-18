@@ -3,6 +3,12 @@
  * and open the template in the editor.
  */
 package src.game;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
 public class GameHelper {
     private static final String alphabet = "abcdefg";
     private int gridLenght = 7;
