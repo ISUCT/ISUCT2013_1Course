@@ -26,7 +26,7 @@ dotComsLost.add(five);
     
 System.out.println("Задача: потопить четыре сайта.");
 System.out.println("Jabiraz.com,Farasam.com ,Oproc.com,Siamba.ru");
-System.out.println("Попытайтесь потопить их за минимальное количество ходов.");
+System.out.println("Попытайтесь потопить их как можно быстрее.");
     
 for (DotCom dotComToSet : dotComsList){
 ArrayList<String> newLocation = helper.placeDotCom(3,7);
@@ -64,7 +64,7 @@ if (numOfGuesses <= 18) {
 System.out.println("Это заняло у вас " + numOfGuesses + "попыток.");
 System.out.println("Вы успели выбраться до того, как ваши данные утонули.");
 } else {
-System.out.println("Это заняло у вас довольно мало времени." + numOfGuesses + "попыток.");
+System.out.println("Это заняло у вас немного времени." + numOfGuesses + "попыток.");
 System.out.println("Данные на дне.");
         }
     }
