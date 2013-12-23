@@ -1,12 +1,15 @@
-
-package javaapplication8;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package dotcom;
 import java.util.*;
 /**
  *
- * @author stud_17
+ * @author l
  */
 public class DotCom {
-    private ArrayList<String> locationCells;
+ private ArrayList<String> locationCells;
     private String name;
     
     public void setLocationCells(ArrayList<String> loc){

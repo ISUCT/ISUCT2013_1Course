@@ -2,13 +2,15 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication8;
-
-import java.io.*;
+package dotcom;
 import java.util.*;
+import java.io.*;
 
-public class GameHelper {
-
+/**
+ *
+ * @author l
+ */
+public class GameHelper {    
     private static final String alphabet = "alphabet";
     private int gridLenght = 7;
     private int gridSize = 49;
@@ -78,8 +80,5 @@ public class GameHelper {
             x++;
         }
         return alphaCells;
-
-
-
     }
 }

@@ -1,14 +1,20 @@
-
-package javaapplication8;
-
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package dotcom;
 import java.util.*;
-
-public class DotComBust {
+/**
+ *
+ * @author l
+ */
+public class DotComBust { 
     private GameHelper helper = new GameHelper();
     private ArrayList<DotCom> dotComsList = new ArrayList<DotCom>();
     private int numOfGuesses = 0;
     
 private void setUpGame(){
+    
     DotCom one = new DotCom();
     one.setName("Google.com");
     DotCom two = new DotCom();
@@ -17,6 +23,7 @@ private void setUpGame(){
     three.setName("Opera.com");
     DotCom four = new DotCom();
     four.setName("Formoza.com");
+    
     dotComsList.add(one);
     dotComsList.add(two);
     dotComsList.add(three);
