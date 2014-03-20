@@ -3,7 +3,7 @@ import java.util.*;
 public class Calendar1{
 public static void main (String args []){
 
-Calendar c = Calendar.getInstance(); 
+Calendar1 c = Calendar1.getInstance(); 
 c.set(2013,09,5,12,35);
 long day1 = c.getTimeInMillis();
 day1 += 1000*60*60;
