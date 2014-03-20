@@ -10,7 +10,7 @@ day1 += 1000*60*60;
  
 c.setTimeInMillis(day1);
 System.out.println("Новый час: " +c.get(c.HOUR_OF_DAY));
-c.add(c.DATE,20);
+c.add(c.DATE,27);
 System.out.println("Добавляем 27 дней: " + c.getTime());
 c.roll(c.DATE,35);
 System.out.println("Прокрутить 35 дней: " + c.getTime());
