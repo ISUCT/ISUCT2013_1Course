@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -30,8 +31,9 @@ public class Calculator {
         int i=0;
         for (float x:X){
             y.add(singleValue (a,b,x));
-            System.out.println("x="+x+"; "+"y="+y.get(i));
-            i++;
+            String res = String.format ("результат вычислений для x=%, 4f,x,y");
+            System.out.println (res);
+           
         }
         return y;
     }
@@ -41,7 +43,8 @@ public class Calculator {
         int i=0;
         for (float x=xn; x<=xk;x=x+dx){
             y.add(singleValue (a,b,x));
-            System.out.println("x="+x+"; "+"y="+y.get(i));
+            String res = String.format ("результат вычислений для x=%, 4f,x,y");
+            System.out.println (res);
             i++;
         }
         return y;
@@ -60,6 +63,8 @@ public class Calculator {
 
         }
        }
+    
+   
 }
 
 
