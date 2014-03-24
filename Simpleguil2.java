@@ -15,8 +15,8 @@ button = new JButton("Нажмите на меня");
         
 button.addActionListener(this);
 frame.getContentPane().add(button);
-frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-frame.setSize(300,300);
+frame.setDefaultCloseOperation(JFrame.Exit_on_close);
+frame.setSize(250,250);
 frame.setVisible(true);
     }
 public void actionPerformed(ActionEvent event){
