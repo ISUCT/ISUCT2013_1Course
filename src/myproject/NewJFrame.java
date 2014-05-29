@@ -2,10 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package myproject2;
+package myproject;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -103,15 +105,14 @@ public class NewJFrame extends javax.swing.JFrame {
                                     .addComponent(jLabel1))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jTextField2)
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
                                     .addComponent(jTextField3)
-                                    .addComponent(jTextField1))
-                                .addGap(10, 10, 10))
+                                    .addComponent(jTextField1)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(jTextField4)))
+                        .addGap(10, 10, 10)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -167,11 +168,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     out+=String.format("y=%.2f", y);
                     out+="\r\n";
                 }
-       
-         
-      
-       
-       
+
        jTextArea1.setText(out);
         } catch(NumberFormatException nx){
            jTextArea1.setText("Введите число"); 
@@ -186,12 +183,28 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-
+        File myFile = new File ("MyCode.txt");
+        ReadFile(myFile, out);
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void ReadFile (File file, String out){
+        try{
+        BufferedReader reader = new BufferedReader (new FileReader ("MyCode.txt"));
+        String line = null;
+        jTextArea1.setText("");
+        while ((line = reader.readLine()) != null){
+        System.out.println(line);
+        jTextArea1.append(line + "  ");
+        }
+        }catch(IOException ex){
+            System.out.println("Couldn't read the cardList out!");
+            ex.printStackTrace();
+        }
+    }
+    
     private void saveFile (File file,String out) {
         try{
-            BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("MyCode.txt"));
                 writer.write(out);
             writer.close();
         }catch(IOException ioEx){
