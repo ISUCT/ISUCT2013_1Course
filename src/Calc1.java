@@ -17,7 +17,7 @@ public class Calc1 {
         chisl = (float)(Math.pow((a*b),1/3)*(Math.pow(a,x)-Math.pow(b,x)));
         znamen = (float) Math.log10(a/b);
         float y = chisl/znamen;
-        String res = String.format("Результат для x=%,.4f равен y=%,.4f",x,y");
+        String res = String.format("Результат для x=%,.4f равен y=%,.4f",x,y);
         System.out.println(res);
         return y;
     }
