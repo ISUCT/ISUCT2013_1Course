@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author stud_5
+ * @author stPC
  */
 public class MyDate {
     public static void main(String[] args) {

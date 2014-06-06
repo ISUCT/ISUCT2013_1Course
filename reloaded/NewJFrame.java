@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author stud_5
+ * @author stPC
  */
 public class NewJFrame extends javax.swing.JFrame {
 

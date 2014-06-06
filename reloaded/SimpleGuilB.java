@@ -8,7 +8,7 @@ import java.awt.event.*;
 
 /**
  *
- * @author stud_5
+ * @author stPC
  */
 public class SimpleGuilB implements ActionListener {
     JButton button;

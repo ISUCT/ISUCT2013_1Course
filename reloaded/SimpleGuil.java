@@ -10,7 +10,7 @@ import javax.swing.*;
 
 /**
  *
- * @author stud_5
+ * @author stPC
  */
 public class SimpleGuil {
      public static void main (String[] args) {

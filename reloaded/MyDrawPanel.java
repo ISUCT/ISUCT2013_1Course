@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 /**
  *
- * @author stud_5
+ * @author stPC
  */
 class MyDrawPanel extends JPanel{
     public void paintComponent(Graphics g){
